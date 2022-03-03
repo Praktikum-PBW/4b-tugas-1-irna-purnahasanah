@@ -1,0 +1,153 @@
+<!-- 
+    - Komen                                                 = CTRL+/
+    - Default source code HTML                              = Shift+!
+    - Merapihkan tampilan struktur dasar source code HTML   = Alt+z
+    - copy-paste/duplikat                                   = Alt+Shift+PgnDn
+    - memindahkan baris                                     = Alt+PgnUp/PgnDn
+-->
+
+<!-- 
+    DTD   = Document Type Declaration, menentukan tipe dokumen.
+    fungsinya menginformasikan ke web browser tentang aturan penulisan suatu dokumen, artinya dokumen HTML tersebut versi 5/terbaru.
+    DTD lebih baik ada, ketika membuat HTML.
+
+    HTML = Hypertext Markup Language, berfungsi untuk membuat struktur dari sebuah website.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <!--
+        Tag meta berfungsi sebagai memberikan informasi,
+        kepake/ngaruh ketik website online.
+    -->
+
+        <!-- kode sebgai standar internsionl "UTF-8"-->
+        <meta charset="UTF-8">
+
+        <!-- file HTML harus comptible dengn browser InternetEdge/Explore -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- 
+            informasikan pada web browser, bahwa website kita akan responsif pada scala 1 bnding 0 
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Mata Kuliah PBW">
+        <meta name="author" content=" Irna Purnahasanah">
+
+        <title>1.9 Tugas</title>
+
+        <!-- CSS Internal -->
+        <style>
+            /* Universal Selector */
+            *{
+                /* Font-family berfungsi untuk mengatur jenis font */
+                font-family: "Poppins light";
+
+                /* Margin = space / ruang kosong di sisi paling luar sebuah element */
+                margin: 0;
+                margin-right    : 20px;
+                margin-left     : 20px;
+
+                border-radius: 8px 8px 8px 8px;
+            }
+
+            .Judul{
+
+                /* Text align berfungsi untuk mengatur perataan teks */
+                text-align: center;
+
+                /* Line height berfungsi untuk mengatur jarak antar baris */
+                line-height: 1.5;
+
+                /* Padding berfungsi agar konten tidak menempel langsung dgn garis tepi */
+                padding-top: 20pt ;
+
+            }
+
+            .Daftar-isi{
+                /* Border merupakan garis batas luar dari sebuah element */
+                border: 2px solid black;
+
+                /* Font-weight berfungsi untuk mengatur ketebalan font */
+                font-weight: 300;
+
+                padding-right: 25px;
+                padding-left: 25px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                
+            }
+
+            .Artikel{
+                border: 2px solid black;
+                text-align: justify;
+
+                padding-right: 25px;
+                padding-left: 25px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="Judul">
+            <h6 style="border: 2px solid black;"> Category </h6>
+
+            <!-- atribut font-size berfungsi untuk mengatur ukuran font-->
+            <h1 style="font-family: Poppins; font-size: 40px;"> H1 - Strawberries History Research Paper </h1>
+
+            <h6 style="border: 2px solid black;"> By: Irna Purnahasanah | on 09 February 2022 | 2010631170014 </h6>
+    
+        </div>
+
+    <br>
+
+        <div class="Daftar-isi">
+            <h3> Daftar Isi </h3>
+            <ol>
+                <li> <a href    = "#list1"> Introduction </a> </li>
+                <li> <a href    = "#list2"> Detailed History </a> </li>
+                <li> <a href    = "#list3"> Varicous Uses Of Strawberries </a> </li>
+            </ol>
+        </div>
+
+    <br>
+
+        <div class="Artikel">
+            <h2 id    = "list1" style="font-size: 2;"> Introduction </h2>
+                <p>
+                    <b style="font-size: 30px;">L</b>orem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ducimus, harum beatae perferendis tempore esse? Ipsam repellendus optio assumenda quidem nulla adipisci commodi nesciunt fugit. Cumque beatae odio laudantium perferendis?
+                    Cupiditate praesentium, inventore mollitia est laudantium harum accusantium quidem velit dolorum in quo debitis perspiciatis, modi quibusdam pariatur, assumenda minus placeat quaerat iste a sequi aut? Enim hic nobis doloremque.
+
+                    <br> <br>
+
+                    Eos corrupti laudantium adipisci non? Voluptatum eveniet quis corrupti quidem eligendi consequatur sed pariatur vel praesentium, inventore temporibus dolor ipsa assumenda dolorum ab totam saepe quasi ea voluptas. Libero, neque.
+
+                    Beatae autem ipsam exercitationem eos alias non debitis? Rem temporibus tenetur aut veniam dolorum facere ratione esse? Deleniti cupiditate quo molestias totam laudantium fugit minus culpa repellendus et. Sequi, architecto?
+                </p>
+
+        <br><br>
+
+            <h2 id    = "list2"> Detailed History </h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, quas velit iusto nulla delectus dolor. At in, modi et facere deleniti sint inventore, doloribus dicta itaque impedit veritatis asperiores fugiat.
+                    Perspiciatis tenetur eligendi nam iure illo aperiam ipsum, animi dicta fugit saepe? Enim, adipisci doloribus magni nihil obcaecati nulla iste velit qui! Ratione commodi dolorum a, sit nihil quae aspernatur.
+                    Odio necessitatibus corrupti officiis consectetur, alias veniam, explicabo nobis magnam quos neque corporis soluta rem pariatur vitae fugit temporibus quas inventore sapiente cumque esse perspiciatis? Eius corporis quia expedita soluta.
+                </p>
+
+        <br><br>
+
+            <h2 id    = "list3"> Varicous Uses Of Strawberries </h2>
+                <BLOckquote>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem amet aliquam maiores aperiam rem consequatur, obcaecati laudantium perspiciatis alias accusantium soluta molestias quo debitis consequuntur odio. Itaque, minima tempore.
+                    Velit iure aperiam quidem facilis, in cumque eius ducimus facere aliquid dolorum culpa deserunt ea eveniet nobis rem consequuntur eum. Quos tenetur impedit earum vel magni ut velit quasi sint.
+                    Sunt deserunt esse temporibus blanditiis architecto, velit veritatis repudiandae fuga pariatur reprehenderit nisi ullam tempore? Quidem ad quos quod praesentium perspiciatis molestias doloremque possimus consequuntur reprehenderit voluptatum, dolorem, quis beatae.
+                    Quia possimus aliquid culpa ullam! Necessitatibus officiis eligendi magni natus dolores soluta dolorem quia dolore sed, omnis temporibus cumque ratione tenetur animi quos a molestias ducimus impedit autem ad. Iusto.
+                </BLOckquote>
+                    <cite style="font-family: Poppins light;">- Bill Gates</cite>
+        </div>
+    </body>
+</html>
